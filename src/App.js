@@ -1,16 +1,27 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/pages/Home/Home';
+import React from "react";
+import "./App.css";
+import Navbar from "components/Navbar";
+import { Container, ThemeProvider } from "@material-ui/core";
+import theme from "containers/styles/theme";
+import Home from "containers/Home/Home";
+import About from "containers/About/About";
 
 function App() {
   return (
-  <Router className="flex">
-    <Navbar/>
-    <Home/>
-    <Home/>
-  </Router>
+    <>
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Container
+          style={{
+            paddingLeft: theme.spacing(22),
+            color: theme.palette.text.primary,
+          }}
+        >
+          <Home id="home-section" />
+          <About id="about-section" />
+        </Container>
+      </ThemeProvider>
+    </>
   );
 }
 
