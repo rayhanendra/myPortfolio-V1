@@ -13,7 +13,6 @@ import {
   CardHeader,
 } from "@material-ui/core";
 import DialogProject from "components/Dialog/DialogProject";
-import DialogBase from "components/Dialog/DialogBase";
 import theme from "containers/styles/theme";
 import { ProjectWrapper } from "context/wrapper";
 import React from "react";

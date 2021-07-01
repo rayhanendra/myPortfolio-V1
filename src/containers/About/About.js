@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
 import img2 from "assets/images/img2.png";
-import poly2 from "assets/images/poly2.png";
+// import poly2 from "assets/images/poly2.png";
 const useStyles = makeStyles(() => ({
   root: {
     marginBottom: theme.spacing(12),

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Navbar from "components/Navbar";
+// import Navbar from "components/Navbar";
 import { Box, CssBaseline, ThemeProvider } from "@material-ui/core";
 import theme from "containers/styles/theme";
 import Home from "containers/Home/Home";
