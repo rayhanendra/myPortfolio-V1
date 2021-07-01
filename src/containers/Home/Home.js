@@ -1,10 +1,20 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "../../Button";
-import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+import {
+  Box,
+  Container,
+  Grid,
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
 import theme from "containers/styles/theme";
+import main1 from "assets/images/main1.svg";
 
 const useStyles = makeStyles(() => ({
+  root: {
+    marginBottom: theme.spacing(12),
+  },
   icons: {
     padding: theme.spacing(6),
     float: "right",
@@ -45,21 +55,26 @@ const useStyles = makeStyles(() => ({
   },
   arrow: {
     position: "absolute",
-    top: "60px",
-    left: "518px",
-    textAlign: "center",
-    marginLeft: "auto",
-    marginRight: "auto",
-    backgroundColor: "#00c49a",
-    textDecoration: "none",
-    color: "white",
+    top: "50%",
+    left: "50%",
   },
+  // arrow: {
+  //   position: "absolute",
+  //   top: "60px",
+  //   left: "518px",
+  //   textAlign: "center",
+  //   marginLeft: "auto",
+  //   marginRight: "auto",
+  //   backgroundColor: "#00c49a",
+  //   textDecoration: "none",
+  //   color: "white",
+  // },
 }));
 
 const Home = () => {
   const classes = useStyles();
   return (
-    <>
+    <Container className={classes.root}>
       <Box className={classes.icons}>
         <img src="img/icons/tw.svg" alt="instagram" />
         <img src="img/icons/ig.svg" alt="instagram" />
@@ -79,7 +94,7 @@ const Home = () => {
         </Grid>
 
         <Grid item xs={12} md={6} style={{ alignItems: "end" }}>
-          <img className={classes.img} src="img/main1.svg" alt="main" />
+          <img className={classes.img} src={main1} alt="main" />
         </Grid>
       </Grid>
 
@@ -89,14 +104,14 @@ const Home = () => {
           <Typography variant="h3">UI/UX Designer</Typography>
           <Typography variant="h3">Graphic Designer</Typography>
         </Box>
-        <Box className={classes.arrowContainer}>
+        {/* <Box className={classes.arrowContainer}>
           <img className="polygon" src="img/icons/polygon.svg" alt="polygon" />
           <Link to="about-section" className={classes.arrow}>
             See More
           </Link>
-        </Box>
+        </Box> */}
       </Box>
-    </>
+    </Container>
   );
 };
 

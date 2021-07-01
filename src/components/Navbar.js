@@ -41,7 +41,14 @@ function Navbar() {
               </Link>
             </li>
             <li className="navbar-item">
-              <Link activeClass="active" to="/">
+              <Link
+                activeClass="active"
+                to="project-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Projects
               </Link>
             </li>

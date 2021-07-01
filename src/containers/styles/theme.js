@@ -11,28 +11,15 @@ const theme = createMuiTheme({
       main: "#FFFFFF",
     },
     secondary: {
-      main: "#020179",
-    },
-    tertiary: {
-      main: "#03019F",
-    },
-    success: {
-      main: "#005108",
-    },
-    merah: {
-      main: "#AC0000",
-    },
-    black: {
-      primary: "#3D434A",
-      secondary: "#515B69",
-      tertiary: "#E4E4E4",
-    },
-    optional: {
-      main: "#1E1E1E",
-      contrastText: "#FFFFFF",
+      main: "#F4E04D",
     },
     text: {
       primary: "#FFFFFF",
+      secondary: "#1C1F33",
+    },
+    background: {
+      paper: "#1C1F33",
+      default: "#1C1F33",
     },
   },
 
