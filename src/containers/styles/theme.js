@@ -11,10 +11,13 @@ const theme = createMuiTheme({
       main: "#FFFFFF",
     },
     secondary: {
+      //Yellow
       main: "#F4E04D",
+      accent: "#00C49A",
     },
     text: {
       primary: "#FFFFFF",
+      //Blue
       secondary: "#1C1F33",
     },
     background: {

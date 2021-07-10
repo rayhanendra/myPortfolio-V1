@@ -6,13 +6,14 @@ import theme from "containers/styles/theme";
 import Home from "containers/Home/Home";
 import About from "containers/About/About";
 import Project from "containers/Project/Project";
+import Navbar from "components/Navbar";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        {/* <Navbar /> */}
+        <Navbar />
         <Box
           maxWidth="xl"
           style={{
@@ -20,9 +21,9 @@ function App() {
             backgroundColor: "#1C1F33",
           }}
         >
-          <Home id="home-section" />
-          <About id="about-section" />
-          <Project id="project-section" />
+          <Home />
+          <About />
+          <Project />
         </Box>
       </ThemeProvider>
     </>

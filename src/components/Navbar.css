@@ -1,6 +1,6 @@
 .navbar {
   height: 100vh;
-  width: 177px;
+  width: 120px;
   background-color: #1c1f33;
   z-index: 999;
   position: fixed;
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   float: right;
-  margin: 0 58px 0 59px;
+  margin: 0 30px;
   height: 100%;
 }
 
@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  list-style: none;
 }
 
 .navbar-item {
@@ -39,6 +40,7 @@
   align-self: auto;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar-item > .active {

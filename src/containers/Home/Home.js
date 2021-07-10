@@ -5,14 +5,17 @@ import {
   Box,
   Container,
   Grid,
+  IconButton,
   makeStyles,
   Typography,
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
 import main1 from "assets/images/main1.svg";
+import { Instagram, LinkedIn } from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
   root: {
+    marginTop: theme.spacing(4),
     marginBottom: theme.spacing(12),
   },
   icons: {
@@ -58,6 +61,11 @@ const useStyles = makeStyles(() => ({
     top: "50%",
     left: "50%",
   },
+  navText: {
+    "&:active": {
+      color: theme.palette.primary.main,
+    },
+  },
   // arrow: {
   //   position: "absolute",
   //   top: "60px",
@@ -74,44 +82,52 @@ const useStyles = makeStyles(() => ({
 const Home = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.root}>
-      <Box className={classes.icons}>
-        <img src="img/icons/tw.svg" alt="instagram" />
+    <section id="home-section">
+      <Container className={classes.root}>
+        <Box className={classes.icons}>
+          <IconButton color="primary">
+            <Instagram />
+          </IconButton>
+          <IconButton color="primary">
+            <LinkedIn />
+          </IconButton>
+          {/* <img src="img/icons/tw.svg" alt="instagram" />
         <img src="img/icons/ig.svg" alt="instagram" />
-        <img src="img/icons/in.svg" alt="instagram" />
-      </Box>
-      <Grid container>
-        <Grid item xs={12} md={6}>
-          <Typography variant="h2" className={classes.text}>
-            Hello, I'm <b>Rayhan</b>
-            <br />
-            Welcome to my portfolio
-          </Typography>
-          <Typography variant="h1" className={classes.text}>
-            Do something impactful, whether it’s good or better
-          </Typography>
-          <Button>download cv</Button>
-        </Grid>
-
-        <Grid item xs={12} md={6} style={{ alignItems: "end" }}>
-          <img className={classes.img} src={main1} alt="main" />
-        </Grid>
-      </Grid>
-
-      <Box>
-        <Box className={classes.titles}>
-          <Typography variant="h3">Front-End Developer</Typography>
-          <Typography variant="h3">UI/UX Designer</Typography>
-          <Typography variant="h3">Graphic Designer</Typography>
+        <img src="img/icons/in.svg" alt="instagram" /> */}
         </Box>
-        {/* <Box className={classes.arrowContainer}>
+        <Grid container>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h2" className={classes.text}>
+              Hello, I'm <b>Rayhan</b>
+              <br />
+              Welcome to my portfolio
+            </Typography>
+            <Typography variant="h1" className={classes.text}>
+              Do something impactful, whether it’s good or better
+            </Typography>
+            <Button>download cv</Button>
+          </Grid>
+
+          <Grid item xs={12} md={6} style={{ alignItems: "end" }}>
+            <img className={classes.img} src={main1} alt="main" />
+          </Grid>
+        </Grid>
+
+        <Box>
+          <Box className={classes.titles}>
+            <Typography variant="h3">Front-End Developer</Typography>
+            <Typography variant="h3">UI/UX Designer</Typography>
+            <Typography variant="h3">Graphic Designer</Typography>
+          </Box>
+          {/* <Box className={classes.arrowContainer}>
           <img className="polygon" src="img/icons/polygon.svg" alt="polygon" />
           <Link to="about-section" className={classes.arrow}>
             See More
           </Link>
         </Box> */}
-      </Box>
-    </Container>
+        </Box>
+      </Container>
+    </section>
   );
 };
 

@@ -54,65 +54,67 @@ function Project() {
   };
 
   return (
-    <Container className={classes.root}>
-      <Box mb={8} textAlign="center">
-        <Typography variant="h3" style={{ padding: theme.spacing(1) }}>
-          MY PROJECTS
-        </Typography>
-        <Typography variant="body1">
-          Here are some projects that i had worked on
-        </Typography>
-      </Box>
-      <Box>
-        <Paper variant="outlined" elevation={0} className={classes.paper}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            indicatorColor="secondary"
-            centered
-          >
-            <Tab label={<Typography variant="h3">ALL</Typography>} />
-            <Tab label={<Typography variant="h3">WEB</Typography>} />
-            <Tab label={<Typography variant="h3">UI/UX</Typography>} />
-            <Tab label={<Typography variant="h3">DESIGN</Typography>} />
-          </Tabs>
-        </Paper>
+    <section id="project-section">
+      <Container className={classes.root}>
+        <Box mb={8} textAlign="center">
+          <Typography variant="h3" style={{ padding: theme.spacing(1) }}>
+            MY PROJECTS
+          </Typography>
+          <Typography variant="body1">
+            Here are some projects that i had worked on
+          </Typography>
+        </Box>
+        <Box>
+          <Paper variant="outlined" elevation={0} className={classes.paper}>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              indicatorColor="secondary"
+              centered
+            >
+              <Tab label={<Typography variant="h3">ALL</Typography>} />
+              <Tab label={<Typography variant="h3">WEB</Typography>} />
+              <Tab label={<Typography variant="h3">UI/UX</Typography>} />
+              <Tab label={<Typography variant="h3">DESIGN</Typography>} />
+            </Tabs>
+          </Paper>
 
-        <Grid container spacing={3} align="center">
-          {data.map((data, index) => (
-            <Grid item key={index} md={4}>
-              <Card
-                className={classes.card}
-                elevation={0}
-                style={{ borderRadius: theme.spacing(2) }}
-                onClick={(event) => handleDialog(event, data)}
-              >
-                <CardActionArea>
-                  <CardHeader
-                    align="left"
-                    title={<Typography variant="h3">{data.title}</Typography>}
-                  />
-                  <CardMedia
-                    className={classes.media}
-                    image={data.image}
-                    title={data.title}
-                  />
-                </CardActionArea>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
+          <Grid container spacing={3} align="center">
+            {data.map((data, index) => (
+              <Grid item key={index} xs={12} md={4}>
+                <Card
+                  className={classes.card}
+                  elevation={0}
+                  style={{ borderRadius: theme.spacing(2) }}
+                  onClick={(event) => handleDialog(event, data)}
+                >
+                  <CardActionArea>
+                    <CardHeader
+                      align="left"
+                      title={<Typography variant="h3">{data.title}</Typography>}
+                    />
+                    <CardMedia
+                      className={classes.media}
+                      image={data.image}
+                      title={data.title}
+                    />
+                  </CardActionArea>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
 
-        <ProjectWrapper dataProject={projectData}>
-          {openDialog && (
-            <DialogProject
-              isShowDialog={openDialog}
-              setIsShowDialog={setOpenDialog}
-            />
-          )}
-        </ProjectWrapper>
-      </Box>
-    </Container>
+          <ProjectWrapper dataProject={projectData}>
+            {openDialog && (
+              <DialogProject
+                isShowDialog={openDialog}
+                setIsShowDialog={setOpenDialog}
+              />
+            )}
+          </ProjectWrapper>
+        </Box>
+      </Container>
+    </section>
   );
 }
 
