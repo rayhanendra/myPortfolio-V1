@@ -8,7 +8,7 @@ import {
   withStyles,
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
-import img2 from "assets/images/img2.png";
+import about from "assets/images/about.svg";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { skills } from "./data";
 // import poly2 from "assets/images/poly2.png";
@@ -49,7 +49,7 @@ const About = () => {
         </Box> */}
           <Grid container style={{ marginBottom: theme.spacing(10) }}>
             <Grid item xs={12} md={6}>
-              <img src={img2} alt="" />
+              <img src={about} alt="" />
             </Grid>
             <Grid item xs={12} md={6} style={{ margin: "auto", width: "50%" }}>
               <Typography variant="body1" align="justify">

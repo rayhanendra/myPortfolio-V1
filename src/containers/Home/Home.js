@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
-import main1 from "assets/images/main1.svg";
+import home from "assets/images/home.svg";
 import { Instagram, LinkedIn, Twitter } from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
@@ -119,7 +119,7 @@ const Home = () => {
           </Grid>
 
           <Grid item xs={12} md={6} style={{ alignItems: "end" }}>
-            <img className={classes.img} src={main1} alt="main" />
+            <img className={classes.img} src={home} alt="main" />
           </Grid>
         </Grid>
 
