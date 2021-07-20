@@ -5,10 +5,29 @@ import {
   Grid,
   Typography,
   makeStyles,
+  withStyles,
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
 import img2 from "assets/images/img2.png";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import { skills } from "./data";
 // import poly2 from "assets/images/poly2.png";
+
+const BorderLinearProgress = withStyles((theme) => ({
+  root: {
+    height: 10,
+    borderRadius: 5,
+    marginTop: theme.spacing(2),
+  },
+  colorPrimary: {
+    backgroundColor: theme.palette.secondary.accent,
+  },
+  bar: {
+    borderRadius: 5,
+    backgroundColor: theme.palette.secondary.main,
+  },
+}))(LinearProgress);
+
 const useStyles = makeStyles(() => ({
   root: {
     marginBottom: theme.spacing(12),
@@ -54,60 +73,45 @@ const About = () => {
               My Skills
             </Typography>
             <Grid container spacing={2}>
-              <Grid item md={6} style={{ padding: theme.spacing(2) }}>
-                <Typography variant="body1">UI/UX DESIGN</Typography>
-              </Grid>
-              <Grid item md={6} style={{ padding: theme.spacing(2) }}>
-                <Typography variant="body1">WEB DEVELOPMENT</Typography>
-              </Grid>
-              <Grid item md={6} style={{ padding: theme.spacing(2) }}>
-                <Typography variant="body1">GRAPHIC DESIGN</Typography>
-              </Grid>
-              <Grid item md={6} style={{ padding: theme.spacing(2) }}>
-                <Typography variant="body1">TEAMWORK</Typography>
-              </Grid>
+              {skills.map((data, index) => (
+                <Grid
+                  key={index}
+                  item
+                  xs={12}
+                  sm={6}
+                  style={{ padding: theme.spacing(2) }}
+                >
+                  <Box display="flex" justifyContent="space-between">
+                    <Typography variant="body1">{data.title}</Typography>
+                    <Typography variant="h3">{data.value}%</Typography>
+                  </Box>
+                  <BorderLinearProgress
+                    variant="determinate"
+                    value={data.value}
+                  />
+                </Grid>
+              ))}
             </Grid>
           </Box>
           <Grid container spacing={2}>
-            <Grid item md={4} style={{ padding: theme.spacing(2) }}>
-              <Typography
-                variant="h3"
-                style={{ marginBottom: theme.spacing(2) }}
+            {skills.map((data, index) => (
+              <Grid
+                key={index}
+                item
+                md={6}
+                style={{ padding: theme.spacing(2) }}
               >
-                UI/UX DESIGN
-              </Typography>
-              <Typography variant="body1" align="justify">
-                This skill achieved after several attempt of doing projects,
-                design jam and courses. I’m currently still learning and going
-                to improve even more.
-              </Typography>
-            </Grid>
-            <Grid item md={4} style={{ padding: theme.spacing(2) }}>
-              <Typography
-                variant="h3"
-                style={{ marginBottom: theme.spacing(2) }}
-              >
-                WEB DEVELOPMENT
-              </Typography>
-              <Typography variant="body1" align="justify">
-                After doing a project on making a web-based forum. I learned
-                skills such as HTML, CSS and Javascript. And now i’m learning
-                the React Js.
-              </Typography>
-            </Grid>
-            <Grid item md={4} style={{ padding: theme.spacing(2) }}>
-              <Typography
-                variant="h3"
-                style={{ marginBottom: theme.spacing(2) }}
-              >
-                GRAPHIC DESIGN
-              </Typography>
-              <Typography variant="body1" align="justify">
-                Being passionate on the digital art, the younger me learned how
-                to use the Photoshop since in the elementary school. And never
-                stop learning ever since.
-              </Typography>
-            </Grid>
+                <Typography
+                  variant="h3"
+                  style={{ marginBottom: theme.spacing(2) }}
+                >
+                  {data.title}
+                </Typography>
+                <Typography variant="body1" align="justify">
+                  {data.desc}
+                </Typography>
+              </Grid>
+            ))}
           </Grid>
         </Box>
       </Container>

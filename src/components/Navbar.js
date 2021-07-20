@@ -138,6 +138,7 @@ function Navbar() {
               >
                 {dataNavigation.map((data, index) => (
                   <Link
+                    key={index}
                     activeClass="active"
                     to={data.id}
                     spy={true}

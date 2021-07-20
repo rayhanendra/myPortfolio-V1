@@ -5,4 +5,17 @@ const useDataProject = () => {
   return useContext(ProjectStore);
 };
 
-export { useDataProject };
+const useTypeFilter = (type) => {
+  let filter =
+    type === 0
+      ? "UI/UX"
+      : type === 1
+      ? "WEB DEV"
+      : type === 2
+      ? "GRAPHIC DESIGN"
+      : "";
+
+  return filter;
+};
+
+export { useDataProject, useTypeFilter };

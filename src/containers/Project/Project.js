@@ -41,7 +41,6 @@ function Project() {
   const [value, setValue] = React.useState(0);
   const [openDialog, setOpenDialog] = React.useState(false);
   const [projectData, setProjectData] = React.useState([]);
-  console.log("ini projectdata", projectData);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -49,7 +48,6 @@ function Project() {
 
   const handleDialog = (event, data) => {
     setProjectData(data);
-    console.log(data);
     setOpenDialog(true);
   };
 

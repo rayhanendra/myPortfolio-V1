@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
 import main1 from "assets/images/main1.svg";
-import { Instagram, LinkedIn } from "@material-ui/icons";
+import { Instagram, LinkedIn, Twitter } from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -89,8 +89,18 @@ const Home = () => {
             <Instagram />
           </IconButton>
           <IconButton color="primary">
-            <LinkedIn />
+            <Twitter />
           </IconButton>
+          <a
+            href="https://www.linkedin.com/in/rayhanendra/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton color="primary">
+              <LinkedIn />
+            </IconButton>
+          </a>
+
           {/* <img src="img/icons/tw.svg" alt="instagram" />
         <img src="img/icons/ig.svg" alt="instagram" />
         <img src="img/icons/in.svg" alt="instagram" /> */}
