@@ -57,7 +57,7 @@ const About = () => {
                 <br />
                 <br />
                 Life is too short for being mediocre. That’s why I became a{" "}
-                <b>UI/UX Designer</b> and <b>Web Developer</b>. Being creative
+                <b>Web Developer</b> and <b>UI/UX Designer</b>. Being creative
                 and unique are some of my treats. Work in a group with a
                 friendly atmosphere is the best way to increase my productivity.
                 Professionality and humanity will be on top of my priorities.

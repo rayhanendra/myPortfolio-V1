@@ -7,11 +7,11 @@ const useDataProject = () => {
 
 const useTypeFilter = (type) => {
   let filter =
-    type === 0
-      ? "UI/UX"
-      : type === 1
+    type === 1
       ? "WEB DEV"
       : type === 2
+      ? "UI/UX"
+      : type === 3
       ? "GRAPHIC DESIGN"
       : "";
 

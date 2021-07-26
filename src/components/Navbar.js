@@ -14,7 +14,7 @@ import {
 import theme from "containers/styles/theme";
 import {
   ArtTrackRounded,
-  ContactMailRounded,
+  // ContactMailRounded,
   HomeRounded,
   PersonRounded,
 } from "@material-ui/icons";
@@ -52,11 +52,11 @@ function Navbar() {
       label: "Project",
       icon: <ArtTrackRounded />,
     },
-    {
-      id: "contact-section",
-      label: "Contact",
-      icon: <ContactMailRounded />,
-    },
+    // {
+    //   id: "contact-section",
+    //   label: "Contact",
+    //   icon: <ContactMailRounded />,
+    // },
   ];
 
   const scrollToTop = () => {

@@ -14,10 +14,19 @@ import bkkbn from "assets/images/projects/bkkbn/bkkbn.png";
 import bkkbnShirt from "assets/images/projects/bkkbn/bkkbnShirt.png";
 import bkkbnLogo from "assets/images/projects/bkkbn/bkkbnLogo.png";
 
+import tutor from "assets/images/projects/tutor/tutor.png";
+import tutorHifi from "assets/images/projects/tutor/tutorHifi.png";
+
+import cda from "assets/images/projects/cda/cda.png";
+import cda0 from "assets/images/projects/cda/cda0.png";
+import cda1 from "assets/images/projects/cda/cda1.png";
+import cda2 from "assets/images/projects/cda/cda2.png";
+import cdaLowfi from "assets/images/projects/cda/cdaLowfi.png";
+import cdaERD from "assets/images/projects/cda/cdaERD.png";
+
 export const data = [
   {
-    id: 0,
-    type: 0,
+    type: 2,
     year: "2020",
     title: "OBUCE - MOBILE APP",
     subtitle: "OBUCE - Obese Reducing App",
@@ -48,7 +57,6 @@ export const data = [
     ],
   },
   {
-    id: 1,
     type: 1,
     year: "2020",
     title: "DRAMAGON - WEB APP",
@@ -82,8 +90,7 @@ export const data = [
     ],
   },
   {
-    id: 2,
-    type: 2,
+    type: 3,
     year: "2020",
     title: "BKKBN LOGO CONCEPT",
     subtitle: "BKKBN Logo Concept",
@@ -102,6 +109,56 @@ export const data = [
       {
         image: bkkbnLogo,
         desc: "Logo",
+      },
+    ],
+  },
+  {
+    type: 1,
+    year: "2020",
+    title: "Sahabat Tutor - WEB APP",
+    subtitle: "Sahabat Tutor - Tutor finding application ",
+    image: tutor,
+    paragraph: [
+      "Sahabat Tutor is a mobile app providing college students to book their tutors for the lectures.",
+    ],
+    process: [
+      {
+        image: tutorHifi,
+        desc: "",
+      },
+    ],
+  },
+  {
+    type: 1,
+    year: "2021",
+    title: "Internship Management IPB",
+    subtitle: "Internship Management IPB - Merdeka Belajar - Kampus Merdeka",
+    image: cda,
+    paragraph: [
+      "The website provides IPB students to manage their internship activities and to communicate with their supervisors.",
+      "This project is considered huge for me with almost 6 months of development. And this project consisting 3 type of roles: admin, student and supervisor. It has around 29 pages with multiple popup dialog in most of each pages. "
+    ],
+    large: true,
+    process: [
+      {
+        image: cda0,
+        desc: "",
+      },
+      {
+        image: cda1,
+        desc: "",
+      },
+      {
+        image: cda2,
+        desc: "",
+      },
+      {
+        image: cdaERD,
+        desc: "Entity Relationship Diagram",
+      },
+      {
+        image: cdaLowfi,
+        desc: "Low Fidelity Prototype",
       },
     ],
   },

@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import theme from "containers/styles/theme";
 import home from "assets/images/home.svg";
-import { Instagram, LinkedIn, Twitter } from "@material-ui/icons";
+import { GitHub, Instagram, LinkedIn } from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -85,12 +85,24 @@ const Home = () => {
     <section id="home-section">
       <Container className={classes.root}>
         <Box className={classes.icons}>
-          <IconButton color="primary">
-            <Instagram />
-          </IconButton>
-          <IconButton color="primary">
-            <Twitter />
-          </IconButton>
+          <a
+            href="https://github.com/rayhanendra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton color="primary">
+              <GitHub />
+            </IconButton>
+          </a>
+          <a
+            href="https://www.instagram.com/rayhanendra/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton color="primary">
+              <Instagram />
+            </IconButton>
+          </a>
           <a
             href="https://www.linkedin.com/in/rayhanendra/"
             target="_blank"
@@ -115,7 +127,13 @@ const Home = () => {
             <Typography variant="h1" className={classes.text}>
               Do something impactful, whether it’s good or better
             </Typography>
-            <Button>download cv</Button>
+            <a
+              href="https://drive.google.com/file/d/19vO_5fF9Co7j9c1G5QmNBiXQO6YyWSMG/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>download cv</Button>
+            </a>
           </Grid>
 
           <Grid item xs={12} md={6} style={{ alignItems: "end" }}>

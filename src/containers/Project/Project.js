@@ -78,28 +78,57 @@ function Project() {
           </Paper>
 
           <Grid container spacing={3} align="center">
-            {data.map((data, index) => (
-              <Grid item key={index} xs={12} md={4}>
-                <Card
-                  className={classes.card}
-                  elevation={0}
-                  style={{ borderRadius: theme.spacing(2) }}
-                  onClick={(event) => handleDialog(event, data)}
-                >
-                  <CardActionArea>
-                    <CardHeader
-                      align="left"
-                      title={<Typography variant="h3">{data.title}</Typography>}
-                    />
-                    <CardMedia
-                      className={classes.media}
-                      image={data.image}
-                      title={data.title}
-                    />
-                  </CardActionArea>
-                </Card>
-              </Grid>
-            ))}
+            {value !== 0
+              ? data
+                  .filter((data) => data.type === value)
+                  .map((data, index) => (
+                    <Grid item key={index} xs={12} md={4}>
+                      <Card
+                        className={classes.card}
+                        elevation={0}
+                        style={{ borderRadius: theme.spacing(2) }}
+                        onClick={(event) => handleDialog(event, data)}
+                      >
+                        <CardActionArea>
+                          <CardHeader
+                            align="left"
+                            title={
+                              <Typography variant="h3">{data.title}</Typography>
+                            }
+                          />
+                          <CardMedia
+                            className={classes.media}
+                            image={data.image}
+                            title={data.title}
+                          />
+                        </CardActionArea>
+                      </Card>
+                    </Grid>
+                  ))
+              : data.map((data, index) => (
+                  <Grid item key={index} xs={12} md={4}>
+                    <Card
+                      className={classes.card}
+                      elevation={0}
+                      style={{ borderRadius: theme.spacing(2) }}
+                      onClick={(event) => handleDialog(event, data)}
+                    >
+                      <CardActionArea>
+                        <CardHeader
+                          align="left"
+                          title={
+                            <Typography variant="h3">{data.title}</Typography>
+                          }
+                        />
+                        <CardMedia
+                          className={classes.media}
+                          image={data.image}
+                          title={data.title}
+                        />
+                      </CardActionArea>
+                    </Card>
+                  </Grid>
+                ))}
           </Grid>
 
           <ProjectWrapper dataProject={projectData}>

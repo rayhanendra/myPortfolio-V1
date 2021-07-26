@@ -51,7 +51,10 @@ const DialogBase = (props) => {
           <Box display="flex" alignItems="center">
             <DialogTitle
               id="alert-dialog-title"
-              style={{ textAlign: "center", paddingRight: theme.spacing(1) }}
+              style={{
+                textAlign: "center",
+                paddingRight: theme.spacing(1),
+              }}
             >
               {title}
             </DialogTitle>
