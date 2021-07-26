@@ -56,15 +56,15 @@ const About = () => {
                 I’m <b>Muhammad Rayhanendra Adikoesoemo</b>
                 <br />
                 <br />
-                Life is too short for being mediocre. That’s why I became a{" "}
-                <b>Web Developer</b> and <b>UI/UX Designer</b>. Being creative
-                and unique are some of my treats. Work in a group with a
-                friendly atmosphere is the best way to increase my productivity.
-                Professionality and humanity will be on top of my priorities.
+                Life is too short for being mediocre. The reason why I challenge
+                myself to become a uniquely creative {""}
+                <b>Web Developer</b> and <b>UI/UX Designer</b>. Work in a group
+                with a friendly atmosphere is the best way to increase my
+                productivity. Professionality and humanity will be on top of my
+                priorities.
                 <br />
                 <br />
-                It’s not all about implementing the idea, it’s also about
-                generating the idea~
+                It’s not just about implementing the idea, but generating it!
               </Typography>
             </Grid>
           </Grid>

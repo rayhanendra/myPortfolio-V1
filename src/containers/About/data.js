@@ -17,6 +17,6 @@ export const skills = [
   {
     title: "Teamwork",
     value: 90,
-    desc: "I love working in a team collaboration. To achieve the same goals, I allocate my full energy and contribute my personal competencies such as: initiative, attention to details, and leadership.",
+    desc: "I love working in a team collaboration. To achieve the same goals, I devote all my energy and contribute my personal competencies such as: initiative, attention to details, and leadership.",
   },
 ];

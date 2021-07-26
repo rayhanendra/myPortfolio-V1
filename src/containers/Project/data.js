@@ -29,7 +29,7 @@ export const data = [
     type: 2,
     year: "2020",
     title: "OBUCE - MOBILE APP",
-    subtitle: "OBUCE - Obese Reducing App",
+    subtitle: "Obuce - Obese Reducing App",
     image: obuce,
     paragraph: [
       "OBUCE - An application that could automatically determine the best diet to help the obese to do a diet based on their body needs such as calories and nutrition. The users will get their very own recommended meals and may differ from every other user. The user can cook their meal with the provided recipe or order the meal then it will be delivered in no time.",
@@ -115,7 +115,7 @@ export const data = [
   {
     type: 1,
     year: "2020",
-    title: "Sahabat Tutor - WEB APP",
+    title: "SAHABAT TUTOR - WEB APP",
     subtitle: "Sahabat Tutor - Tutor finding application ",
     image: tutor,
     paragraph: [
@@ -131,7 +131,7 @@ export const data = [
   {
     type: 1,
     year: "2021",
-    title: "Internship Management IPB",
+    title: "INTERNSHIP MANAGEMENT IPB",
     subtitle: "Internship Management IPB - Merdeka Belajar - Kampus Merdeka",
     image: cda,
     paragraph: [
