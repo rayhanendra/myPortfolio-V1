@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css",
-    "main.js": "/myPortfolio-V1/static/js/main.7725ccf7.chunk.js",
-    "main.js.map": "/myPortfolio-V1/static/js/main.7725ccf7.chunk.js.map",
+    "main.js": "/myPortfolio-V1/static/js/main.d98feb2f.chunk.js",
+    "main.js.map": "/myPortfolio-V1/static/js/main.d98feb2f.chunk.js.map",
     "runtime-main.js": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js",
     "runtime-main.js.map": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js.map",
     "static/js/2.a552ba3c.chunk.js": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/myPortfolio-V1/index.html",
     "static/css/main.b4171b54.chunk.css.map": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css.map",
     "static/js/2.a552ba3c.chunk.js.LICENSE.txt": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js.LICENSE.txt",
-    "static/media/about.8f515ab0.svg": "/myPortfolio-V1/static/media/about.8f515ab0.svg",
+    "static/media/about.f39f59d6.svg": "/myPortfolio-V1/static/media/about.f39f59d6.svg",
     "static/media/bkkbn.912b278d.png": "/myPortfolio-V1/static/media/bkkbn.912b278d.png",
     "static/media/bkkbnLogo.46469504.png": "/myPortfolio-V1/static/media/bkkbnLogo.46469504.png",
     "static/media/bkkbnShirt.91069c38.png": "/myPortfolio-V1/static/media/bkkbnShirt.91069c38.png",
@@ -38,6 +38,6 @@
     "static/js/runtime-main.e7428a94.js",
     "static/js/2.a552ba3c.chunk.js",
     "static/css/main.b4171b54.chunk.css",
-    "static/js/main.7725ccf7.chunk.js"
+    "static/js/main.d98feb2f.chunk.js"
   ]
 }
