@@ -125,7 +125,7 @@ const Home = () => {
               Welcome to my portfolio
             </Typography>
             <Typography variant="h1" className={classes.text}>
-              Do something impactful, whether it’s good or better
+              Do something impactful, for good or better
             </Typography>
             <a
               href="https://drive.google.com/file/d/19vO_5fF9Co7j9c1G5QmNBiXQO6YyWSMG/view?usp=sharing"
