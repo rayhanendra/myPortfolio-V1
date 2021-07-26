@@ -116,10 +116,11 @@ export const data = [
     type: 1,
     year: "2020",
     title: "SAHABAT TUTOR - WEB APP",
-    subtitle: "Sahabat Tutor - Tutor finding application ",
+    subtitle: "Sahabat Tutor - Admin Management Website ",
     image: tutor,
     paragraph: [
       "Sahabat Tutor is a mobile app providing college students to book their tutors for the lectures.",
+      "But I worked for the development of the admin management website."
     ],
     process: [
       {
