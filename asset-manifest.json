@@ -1,19 +1,25 @@
 {
   "files": {
     "main.css": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css",
-    "main.js": "/myPortfolio-V1/static/js/main.106142fb.chunk.js",
-    "main.js.map": "/myPortfolio-V1/static/js/main.106142fb.chunk.js.map",
+    "main.js": "/myPortfolio-V1/static/js/main.7725ccf7.chunk.js",
+    "main.js.map": "/myPortfolio-V1/static/js/main.7725ccf7.chunk.js.map",
     "runtime-main.js": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js",
     "runtime-main.js.map": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js.map",
-    "static/js/2.fd0014e5.chunk.js": "/myPortfolio-V1/static/js/2.fd0014e5.chunk.js",
-    "static/js/2.fd0014e5.chunk.js.map": "/myPortfolio-V1/static/js/2.fd0014e5.chunk.js.map",
+    "static/js/2.a552ba3c.chunk.js": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js",
+    "static/js/2.a552ba3c.chunk.js.map": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js.map",
     "index.html": "/myPortfolio-V1/index.html",
     "static/css/main.b4171b54.chunk.css.map": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css.map",
-    "static/js/2.fd0014e5.chunk.js.LICENSE.txt": "/myPortfolio-V1/static/js/2.fd0014e5.chunk.js.LICENSE.txt",
+    "static/js/2.a552ba3c.chunk.js.LICENSE.txt": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js.LICENSE.txt",
     "static/media/about.8f515ab0.svg": "/myPortfolio-V1/static/media/about.8f515ab0.svg",
     "static/media/bkkbn.912b278d.png": "/myPortfolio-V1/static/media/bkkbn.912b278d.png",
     "static/media/bkkbnLogo.46469504.png": "/myPortfolio-V1/static/media/bkkbnLogo.46469504.png",
     "static/media/bkkbnShirt.91069c38.png": "/myPortfolio-V1/static/media/bkkbnShirt.91069c38.png",
+    "static/media/cda.ef242f0b.png": "/myPortfolio-V1/static/media/cda.ef242f0b.png",
+    "static/media/cda0.672afe97.png": "/myPortfolio-V1/static/media/cda0.672afe97.png",
+    "static/media/cda1.ec97f498.png": "/myPortfolio-V1/static/media/cda1.ec97f498.png",
+    "static/media/cda2.b3b8bad0.png": "/myPortfolio-V1/static/media/cda2.b3b8bad0.png",
+    "static/media/cdaERD.74becc9f.png": "/myPortfolio-V1/static/media/cdaERD.74becc9f.png",
+    "static/media/cdaLowfi.879f929f.png": "/myPortfolio-V1/static/media/cdaLowfi.879f929f.png",
     "static/media/dramagon.d377cf2b.png": "/myPortfolio-V1/static/media/dramagon.d377cf2b.png",
     "static/media/dramagonAD.e1c0dc04.png": "/myPortfolio-V1/static/media/dramagonAD.e1c0dc04.png",
     "static/media/dramagonERD.a66b6da8.png": "/myPortfolio-V1/static/media/dramagonERD.a66b6da8.png",
@@ -24,12 +30,14 @@
     "static/media/obuceHifi.d51c4072.png": "/myPortfolio-V1/static/media/obuceHifi.d51c4072.png",
     "static/media/obuceJourney.44cdfcc2.png": "/myPortfolio-V1/static/media/obuceJourney.44cdfcc2.png",
     "static/media/obucePersona.4a861547.png": "/myPortfolio-V1/static/media/obucePersona.4a861547.png",
-    "static/media/obuceWireframe.ad3cb13b.png": "/myPortfolio-V1/static/media/obuceWireframe.ad3cb13b.png"
+    "static/media/obuceWireframe.ad3cb13b.png": "/myPortfolio-V1/static/media/obuceWireframe.ad3cb13b.png",
+    "static/media/tutor.8272ae74.png": "/myPortfolio-V1/static/media/tutor.8272ae74.png",
+    "static/media/tutorHifi.49b56cab.png": "/myPortfolio-V1/static/media/tutorHifi.49b56cab.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e7428a94.js",
-    "static/js/2.fd0014e5.chunk.js",
+    "static/js/2.a552ba3c.chunk.js",
     "static/css/main.b4171b54.chunk.css",
-    "static/js/main.106142fb.chunk.js"
+    "static/js/main.7725ccf7.chunk.js"
   ]
 }
