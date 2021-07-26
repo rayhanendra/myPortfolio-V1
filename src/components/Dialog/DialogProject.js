@@ -8,7 +8,7 @@ function DialogProject(props) {
   const { style, className, ...rest } = props;
 
   const useLarge = useMediaQuery(theme.breakpoints.up("sm"));
-
+  const useSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const { dataProject } = useDataProject();
 
   return (
@@ -47,6 +47,8 @@ function DialogProject(props) {
                   width={
                     dataProject.process.length === 1 && useLarge
                       ? "550"
+                      : dataProject.large && useSmall
+                      ? "310"
                       : dataProject.large
                       ? "420"
                       : dataProject.process.length === 1
