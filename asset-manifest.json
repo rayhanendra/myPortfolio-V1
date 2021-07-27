@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css",
-    "main.js": "/myPortfolio-V1/static/js/main.5eecd2fc.chunk.js",
-    "main.js.map": "/myPortfolio-V1/static/js/main.5eecd2fc.chunk.js.map",
+    "main.js": "/myPortfolio-V1/static/js/main.1efbb988.chunk.js",
+    "main.js.map": "/myPortfolio-V1/static/js/main.1efbb988.chunk.js.map",
     "runtime-main.js": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js",
     "runtime-main.js.map": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js.map",
-    "static/js/2.a552ba3c.chunk.js": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js",
-    "static/js/2.a552ba3c.chunk.js.map": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js.map",
+    "static/js/2.f5de7d7c.chunk.js": "/myPortfolio-V1/static/js/2.f5de7d7c.chunk.js",
+    "static/js/2.f5de7d7c.chunk.js.map": "/myPortfolio-V1/static/js/2.f5de7d7c.chunk.js.map",
     "index.html": "/myPortfolio-V1/index.html",
     "static/css/main.b4171b54.chunk.css.map": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css.map",
-    "static/js/2.a552ba3c.chunk.js.LICENSE.txt": "/myPortfolio-V1/static/js/2.a552ba3c.chunk.js.LICENSE.txt",
+    "static/js/2.f5de7d7c.chunk.js.LICENSE.txt": "/myPortfolio-V1/static/js/2.f5de7d7c.chunk.js.LICENSE.txt",
     "static/media/about.f39f59d6.svg": "/myPortfolio-V1/static/media/about.f39f59d6.svg",
     "static/media/bkkbn.912b278d.png": "/myPortfolio-V1/static/media/bkkbn.912b278d.png",
     "static/media/bkkbnLogo.46469504.png": "/myPortfolio-V1/static/media/bkkbnLogo.46469504.png",
     "static/media/bkkbnShirt.91069c38.png": "/myPortfolio-V1/static/media/bkkbnShirt.91069c38.png",
+    "static/media/boongeon.6c7db37c.png": "/myPortfolio-V1/static/media/boongeon.6c7db37c.png",
+    "static/media/boongeon1.991393eb.png": "/myPortfolio-V1/static/media/boongeon1.991393eb.png",
+    "static/media/boongeon2.8e0fb3b3.png": "/myPortfolio-V1/static/media/boongeon2.8e0fb3b3.png",
+    "static/media/boongeon3.2c9b43d5.png": "/myPortfolio-V1/static/media/boongeon3.2c9b43d5.png",
     "static/media/cda.ef242f0b.png": "/myPortfolio-V1/static/media/cda.ef242f0b.png",
     "static/media/cda0.672afe97.png": "/myPortfolio-V1/static/media/cda0.672afe97.png",
     "static/media/cda1.ec97f498.png": "/myPortfolio-V1/static/media/cda1.ec97f498.png",
@@ -36,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e7428a94.js",
-    "static/js/2.a552ba3c.chunk.js",
+    "static/js/2.f5de7d7c.chunk.js",
     "static/css/main.b4171b54.chunk.css",
-    "static/js/main.5eecd2fc.chunk.js"
+    "static/js/main.1efbb988.chunk.js"
   ]
 }
