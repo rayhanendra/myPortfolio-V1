@@ -11,6 +11,7 @@ import {
   Grid,
   Container,
   CardHeader,
+  useMediaQuery,
 } from "@material-ui/core";
 import DialogProject from "components/Dialog/DialogProject";
 import theme from "containers/styles/theme";
@@ -42,6 +43,26 @@ function Project() {
   const [openDialog, setOpenDialog] = React.useState(false);
   const [projectData, setProjectData] = React.useState([]);
 
+  const useSmall = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const tabData = [
+    {
+      name: "ALL",
+    },
+    {
+      name: "WEB",
+    },
+    {
+      name: "UI/UX",
+    },
+    {
+      name: "DESIGN",
+    },
+    {
+      name: "GAME",
+    },
+  ];
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -70,10 +91,15 @@ function Project() {
               indicatorColor="secondary"
               centered
             >
-              <Tab label={<Typography variant="h3">ALL</Typography>} />
-              <Tab label={<Typography variant="h3">WEB</Typography>} />
-              <Tab label={<Typography variant="h3">UI/UX</Typography>} />
-              <Tab label={<Typography variant="h3">DESIGN</Typography>} />
+              {tabData.map((data) => (
+                <Tab
+                  label={
+                    <Typography variant={useSmall ? "body2" : "h3"}>
+                      {data.name}
+                    </Typography>
+                  }
+                />
+              ))}
             </Tabs>
           </Paper>
 

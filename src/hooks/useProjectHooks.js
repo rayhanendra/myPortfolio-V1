@@ -13,6 +13,8 @@ const useTypeFilter = (type) => {
       ? "UI/UX"
       : type === 3
       ? "GRAPHIC DESIGN"
+      : type === 4
+      ? "GAME DEVELOPMENT"
       : "";
 
   return filter;

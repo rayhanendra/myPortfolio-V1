@@ -24,6 +24,11 @@ import cda2 from "assets/images/projects/cda/cda2.png";
 import cdaLowfi from "assets/images/projects/cda/cdaLowfi.png";
 import cdaERD from "assets/images/projects/cda/cdaERD.png";
 
+import boongeon from "assets/images/projects/boongeon/boongeon.png";
+import boongeon1 from "assets/images/projects/boongeon/boongeon1.png";
+import boongeon2 from "assets/images/projects/boongeon/boongeon2.png";
+import boongeon3 from "assets/images/projects/boongeon/boongeon3.png";
+
 export const data = [
   {
     type: 2,
@@ -120,7 +125,7 @@ export const data = [
     image: tutor,
     paragraph: [
       "Sahabat Tutor is a mobile app providing college students to book their tutors for the lectures.",
-      "But I worked for the development of the admin management website."
+      "But I worked for the development of the admin management website.",
     ],
     process: [
       {
@@ -133,11 +138,11 @@ export const data = [
     type: 1,
     year: "2021",
     title: "INTERNSHIP MANAGEMENT IPB",
-    subtitle: "Internship Management IPB - Merdeka Belajar - Kampus Merdeka",
+    subtitle: "Internship Management IPB - MBKM",
     image: cda,
     paragraph: [
       "The website provides IPB students to manage their internship activities and to communicate with their supervisors.",
-      "This project is considered huge for me with almost 6 months of development. And this project consisting 3 type of roles: admin, student and supervisor. It has around 29 pages with multiple popup dialog in most of each pages. "
+      "This project is considered huge for me with almost 6 months of development. And this project consisting 3 type of roles: admin, student and supervisor. It has around 29 pages with multiple popup dialog in most of each pages. ",
     ],
     large: true,
     process: [
@@ -160,6 +165,37 @@ export const data = [
       {
         image: cdaLowfi,
         desc: "Low Fidelity Prototype",
+      },
+    ],
+  },
+  {
+    type: 4,
+    year: "2020",
+    title: "BOONGEON - GAME",
+    subtitle: "Boongeon - Game with Unity",
+    image: boongeon3,
+    github: "https://github.com/rayhanendra/Boongeon-Grafkom",
+    paragraph: [
+      "Boongeon Is a 3D PC game. The task as a player is to defeat all enemies for getting  the elemental books used to eliminate the last boss.",
+      "I took the role as a game developer, visual effects developer, and model creator. This project was built using Unity and Blender.",
+    ],
+    large: true,
+    process: [
+      {
+        image: boongeon1,
+        desc: "Sketch",
+      },
+      {
+        image: boongeon2,
+        desc: "Models",
+      },
+      {
+        image: boongeon3,
+        desc: "Development",
+      },
+      {
+        image: boongeon,
+        desc: "Final Release",
       },
     ],
   },

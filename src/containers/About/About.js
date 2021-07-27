@@ -53,7 +53,7 @@ const About = () => {
             </Grid>
             <Grid item xs={12} md={6} style={{ margin: "auto", width: "50%" }}>
               <Typography variant="body1" align="justify">
-                I’m <b>M. Rayhanendra Adikoesoemo</b>
+                I’m <b>M.Rayhanendra Adikoesoemo</b>
                 <br />
                 <br />
                 Life is too short for being mediocre. The reason why I challenge
