@@ -2,10 +2,10 @@
  * theme for MUI
  * TODO: create a theme object as per designs
  */
-import { createMuiTheme } from "@material-ui/core";
+import { createTheme } from "@mui/material/styles";
 
 // Create a theme instance.
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#FFFFFF",
@@ -55,6 +55,16 @@ const theme = createMuiTheme({
     body2: {
       fontSize: "14px",
       fontWeight: 600,
+    },
+  },
+
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
     },
   },
 });

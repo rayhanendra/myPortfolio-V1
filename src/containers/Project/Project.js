@@ -1,7 +1,6 @@
 import {
   Box,
   Typography,
-  makeStyles,
   Paper,
   Tabs,
   Tab,
@@ -12,7 +11,8 @@ import {
   Container,
   CardHeader,
   useMediaQuery,
-} from "@material-ui/core";
+} from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import DialogProject from "components/Dialog/DialogProject";
 import theme from "containers/styles/theme";
 import { ProjectWrapper } from "context/wrapper";

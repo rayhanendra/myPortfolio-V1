@@ -6,18 +6,13 @@ import {
   BottomNavigation,
   BottomNavigationAction,
   Box,
-  makeStyles,
   Toolbar,
   Typography,
   useMediaQuery,
-} from "@material-ui/core";
+} from "@mui/material";
 import theme from "containers/styles/theme";
-import {
-  ArtTrackRounded,
-  // ContactMailRounded,
-  HomeRounded,
-  PersonRounded,
-} from "@material-ui/icons";
+import { ArtTrackRounded, HomeRounded, PersonRounded } from "@mui/icons-material";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   navText: {

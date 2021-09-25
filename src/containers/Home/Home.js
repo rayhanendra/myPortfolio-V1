@@ -1,21 +1,20 @@
 import React from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "../../Button";
-import {
-  Box,
-  Container,
-  Grid,
-  IconButton,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
 import theme from "containers/styles/theme";
 import home from "assets/images/home.svg";
-import { GitHub, Instagram, LinkedIn } from "@material-ui/icons";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginTop: theme.spacing(4),
+    [theme.breakpoints.down("lg")]: {
+      marginTop: theme.spacing(4),
+    },
+    [theme.breakpoints.only("xs")]: {
+      marginTop: 0,
+    },
     marginBottom: theme.spacing(12),
   },
   icons: {
@@ -30,7 +29,6 @@ const useStyles = makeStyles(() => ({
   },
   img: {
     height: "353px",
-    float: "right",
   },
   row: {
     display: "flex",
@@ -117,35 +115,56 @@ const Home = () => {
         <img src="img/icons/ig.svg" alt="instagram" />
         <img src="img/icons/in.svg" alt="instagram" /> */}
         </Box>
-        <Grid container>
-          <Grid item xs={12} md={6}>
-            <Typography variant="h2" className={classes.text}>
-              Hello, I'm <b>Rayhan</b>
-              <br />
-              Welcome to my portfolio
-            </Typography>
-            <Typography variant="h1" className={classes.text}>
-              Do something impactful, for the good, better and best
-            </Typography>
-            <a
-              href="https://drive.google.com/file/d/19vO_5fF9Co7j9c1G5QmNBiXQO6YyWSMG/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>download cv</Button>
-            </a>
+        <Grid container alignItems="center">
+          <Grid
+            container
+            item
+            xs={12}
+            md={6}
+            justifyContent="space-between"
+            spacing={4}
+          >
+            <Grid item>
+              <Typography color="primary" variant="h2" className={classes.text}>
+                Hello, I'm <b>Rayhan</b>
+                <br />
+                Welcome to my portfolio
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography color="primary" variant="h1" className={classes.text}>
+                Do something impactful, for the good, better and best
+              </Typography>
+            </Grid>
+            <Grid item>
+              <a
+                href="https://drive.google.com/file/d/19vO_5fF9Co7j9c1G5QmNBiXQO6YyWSMG/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>download cv</Button>
+              </a>
+            </Grid>
           </Grid>
 
-          <Grid item xs={12} md={6} style={{ alignItems: "end" }}>
-            <img className={classes.img} src={home} alt="main" />
+          <Grid item xs={12} md={6}>
+            <Box display="flex" alignItems="center" justifyContent="flex-end">
+              <img className={classes.img} src={home} alt="main" />
+            </Box>
           </Grid>
         </Grid>
 
         <Box>
           <Box className={classes.titles}>
-            <Typography variant="h3">Front-End Developer</Typography>
-            <Typography variant="h3">UI/UX Designer</Typography>
-            <Typography variant="h3">Graphic Designer</Typography>
+            <Typography color="primary" variant="h3">
+              Front-End Developer
+            </Typography>
+            <Typography color="primary" variant="h3">
+              UI/UX Designer
+            </Typography>
+            <Typography color="primary" variant="h3">
+              Graphic Designer
+            </Typography>
           </Box>
           {/* <Box className={classes.arrowContainer}>
           <img className="polygon" src="img/icons/polygon.svg" alt="polygon" />

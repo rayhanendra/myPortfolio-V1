@@ -1,30 +1,29 @@
 import React from "react";
 import "./App.css";
-// import Navbar from "components/Navbar";
-import { Box, CssBaseline, ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from "@mui/material/styles";
 import theme from "containers/styles/theme";
 import Home from "containers/Home/Home";
 import About from "containers/About/About";
 import Project from "containers/Project/Project";
 import Navbar from "components/Navbar";
+import { Container } from "@mui/material";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
         <Navbar />
-        <Box
+        <Container
           maxWidth="xl"
-          style={{
-            // paddingLeft: theme.spacing(22),
+          sx={{
+            paddingLeft: { lg: 12 },
             backgroundColor: "#1C1F33",
           }}
         >
           <Home />
           <About />
           <Project />
-        </Box>
+        </Container>
       </ThemeProvider>
     </>
   );

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, useMediaQuery } from "@material-ui/core";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import DialogBase from "components/Dialog/DialogBase";
 import theme from "containers/styles/theme";
 import { useDataProject } from "hooks/useProjectHooks";

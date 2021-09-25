@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Grid,
-  Typography,
-  makeStyles,
-  withStyles,
-} from "@material-ui/core";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import theme from "containers/styles/theme";
 import about from "assets/images/about.svg";
-import LinearProgress from "@material-ui/core/LinearProgress";
+import LinearProgress from "@mui/material/LinearProgress";
 import { skills } from "./data";
+import { makeStyles, withStyles } from "@mui/styles";
 // import poly2 from "assets/images/poly2.png";
 
 const BorderLinearProgress = withStyles((theme) => ({

@@ -8,9 +8,9 @@ import {
   Slide,
   Typography,
   useMediaQuery,
-} from "@material-ui/core";
-import { Close, GitHub } from "@material-ui/icons";
-import { makeStyles } from "@material-ui/core/styles";
+} from "@mui/material";
+import { Close, GitHub } from "@mui/icons-material";
+import { makeStyles } from "@mui/styles";
 import theme from "containers/styles/theme";
 import { useTypeFilter } from "hooks/useProjectHooks";
 
