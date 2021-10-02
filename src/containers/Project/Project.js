@@ -102,6 +102,7 @@ function Project() {
               textColor=""
               indicatorColor="secondary"
               centered
+              variant={useSmall ? "scrollable" : "centered"}
             >
               {tabData.map((data) => (
                 <Tab
