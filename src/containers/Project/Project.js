@@ -16,18 +16,12 @@ import { makeStyles } from "@mui/styles";
 import DialogProject from "components/Dialog/DialogProject";
 import theme from "containers/styles/theme";
 import { ProjectWrapper } from "context/wrapper";
-import React from "react";
+import React, { useState } from "react";
 import { data } from "./data";
 
 const useStyles = makeStyles(() => ({
   root: {
     marginBottom: theme.spacing(12),
-  },
-  paper: {
-    flexGrow: 1,
-    marginBottom: theme.spacing(6),
-    backgroundColor: theme.palette.background.default,
-    borderColor: theme.palette.secondary.main,
   },
   card: {
     maxWidth: 345,
@@ -72,22 +66,40 @@ function Project() {
     setOpenDialog(true);
   };
 
+  const handleClose = () => {
+    setOpenDialog(false);
+  };
+
   return (
     <section id="project-section">
       <Container className={classes.root}>
         <Box mb={8} textAlign="center">
-          <Typography variant="h3" style={{ padding: theme.spacing(1) }}>
+          <Typography
+            color="primary"
+            variant="h3"
+            style={{ padding: theme.spacing(1) }}
+          >
             MY PROJECTS
           </Typography>
-          <Typography variant="body1">
+          <Typography color="primary" variant="body1">
             Here are some projects that i had worked on
           </Typography>
         </Box>
         <Box>
-          <Paper variant="outlined" elevation={0} className={classes.paper}>
+          <Paper
+            variant="outlined"
+            elevation={0}
+            sx={{
+              flexGrow: 1,
+              marginBottom: theme.spacing(6),
+              backgroundColor: theme.palette.background.default,
+              borderColor: theme.palette.secondary.main,
+            }}
+          >
             <Tabs
               value={value}
               onChange={handleChange}
+              textColor=""
               indicatorColor="secondary"
               centered
             >
@@ -160,7 +172,8 @@ function Project() {
           <ProjectWrapper dataProject={projectData}>
             {openDialog && (
               <DialogProject
-                isShowDialog={openDialog}
+                open={openDialog}
+                onClose={handleClose}
                 setIsShowDialog={setOpenDialog}
               />
             )}

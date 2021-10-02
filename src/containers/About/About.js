@@ -2,25 +2,26 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import theme from "containers/styles/theme";
 import about from "assets/images/about.svg";
-import LinearProgress from "@mui/material/LinearProgress";
+import LinearProgress, {
+  linearProgressClasses,
+} from "@mui/material/LinearProgress";
 import { skills } from "./data";
-import { makeStyles, withStyles } from "@mui/styles";
+import { makeStyles } from "@mui/styles";
+import { styled } from "@mui/material/styles";
+
 // import poly2 from "assets/images/poly2.png";
 
-const BorderLinearProgress = withStyles((theme) => ({
-  root: {
-    height: 10,
-    borderRadius: 5,
-    marginTop: theme.spacing(2),
-  },
-  colorPrimary: {
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  height: 10,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
     backgroundColor: theme.palette.secondary.accent,
   },
-  bar: {
+  [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
     backgroundColor: theme.palette.secondary.main,
   },
-}))(LinearProgress);
+}));
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -41,12 +42,12 @@ const About = () => {
           {/* <Box className={classes.poly}>
           <img src={poly2} alt="polygon" />
         </Box> */}
-          <Grid container style={{ marginBottom: theme.spacing(10) }}>
+          <Grid container sx={{ marginBottom: theme.spacing(10) }}>
             <Grid item xs={12} md={6}>
               <img src={about} alt="" />
             </Grid>
-            <Grid item xs={12} md={6} style={{ margin: "auto", width: "50%" }}>
-              <Typography variant="body1" align="justify">
+            <Grid item xs={12} md={6} sx={{ margin: "auto", width: "50%" }}>
+              <Typography color="primary" variant="body1" align="justify">
                 I’m <b>M.Rayhanendra Adikoesoemo</b>
                 <br />
                 <br />
@@ -62,8 +63,12 @@ const About = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Box style={{ marginBottom: theme.spacing(10) }}>
-            <Typography variant="h3" style={{ padding: theme.spacing(1) }}>
+          <Box sx={{ marginBottom: theme.spacing(10) }}>
+            <Typography
+              color="primary"
+              variant="h3"
+              sx={{ padding: theme.spacing(1) }}
+            >
               My Skills
             </Typography>
             <Grid container spacing={2}>
@@ -73,11 +78,15 @@ const About = () => {
                   item
                   xs={12}
                   sm={6}
-                  style={{ padding: theme.spacing(2) }}
+                  sx={{ padding: theme.spacing(2) }}
                 >
-                  <Box display="flex" justifyContent="space-between">
-                    <Typography variant="body1">{data.title}</Typography>
-                    <Typography variant="h3">{data.value}%</Typography>
+                  <Box display="flex" justifyContent="space-between" mb={2}>
+                    <Typography color="primary" variant="body1">
+                      {data.title}
+                    </Typography>
+                    <Typography color="primary" variant="h3">
+                      {data.value}%
+                    </Typography>
                   </Box>
                   <BorderLinearProgress
                     variant="determinate"
@@ -89,19 +98,15 @@ const About = () => {
           </Box>
           <Grid container spacing={2}>
             {skills.map((data, index) => (
-              <Grid
-                key={index}
-                item
-                md={6}
-                style={{ padding: theme.spacing(2) }}
-              >
+              <Grid key={index} item md={6} sx={{ padding: theme.spacing(2) }}>
                 <Typography
+                  color="primary"
                   variant="h3"
-                  style={{ marginBottom: theme.spacing(2) }}
+                  sx={{ marginBottom: theme.spacing(2) }}
                 >
                   {data.title}
                 </Typography>
-                <Typography variant="body1" align="justify">
+                <Typography color="primary" variant="body1" align="justify">
                   {data.desc}
                 </Typography>
               </Grid>

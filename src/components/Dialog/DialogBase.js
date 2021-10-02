@@ -26,8 +26,7 @@ const useStyles = makeStyles(({ palette, spacing }) => ({
 
 const DialogBase = (props) => {
   const classes = useStyles();
-  const { children, title, type, year, github, setIsShowDialog, isShowDialog } =
-    props;
+  const { children, title, type, year, github, onClose, open } = props;
 
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -38,7 +37,8 @@ const DialogBase = (props) => {
   return (
     <Box>
       <Dialog
-        open={isShowDialog}
+        onClose={onClose}
+        open={open}
         TransitionComponent={Transition}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
@@ -69,7 +69,7 @@ const DialogBase = (props) => {
               </a>
             )}
           </Box>
-          <IconButton onClick={() => setIsShowDialog(!isShowDialog)}>
+          <IconButton onClick={() => onClose(false)}>
             <Close className={classes.titleClose} style={{ color: "white" }} />
           </IconButton>
         </Box>

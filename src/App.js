@@ -17,7 +17,6 @@ function App() {
           maxWidth="xl"
           sx={{
             paddingLeft: { lg: 12 },
-            backgroundColor: "#1C1F33",
           }}
         >
           <Home />
