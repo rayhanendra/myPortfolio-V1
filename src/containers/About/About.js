@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import theme from "containers/styles/theme";
-import about from "assets/images/about.svg";
+import about from "assets/images/about_1.svg";
 import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";

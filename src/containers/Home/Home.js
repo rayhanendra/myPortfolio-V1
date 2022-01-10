@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "../../Button";
 import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
 import theme from "containers/styles/theme";
-import home from "assets/images/home.svg";
+import home from "assets/images/home_1.png";
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
 
