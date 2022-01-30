@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css",
-    "main.js": "/myPortfolio-V1/static/js/main.c496273e.chunk.js",
-    "main.js.map": "/myPortfolio-V1/static/js/main.c496273e.chunk.js.map",
+    "main.js": "/myPortfolio-V1/static/js/main.9a1aee5e.chunk.js",
+    "main.js.map": "/myPortfolio-V1/static/js/main.9a1aee5e.chunk.js.map",
     "runtime-main.js": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js",
     "runtime-main.js.map": "/myPortfolio-V1/static/js/runtime-main.e7428a94.js.map",
     "static/js/2.5c0030de.chunk.js": "/myPortfolio-V1/static/js/2.5c0030de.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/myPortfolio-V1/index.html",
     "static/css/main.b4171b54.chunk.css.map": "/myPortfolio-V1/static/css/main.b4171b54.chunk.css.map",
     "static/js/2.5c0030de.chunk.js.LICENSE.txt": "/myPortfolio-V1/static/js/2.5c0030de.chunk.js.LICENSE.txt",
-    "static/media/about.f39f59d6.svg": "/myPortfolio-V1/static/media/about.f39f59d6.svg",
+    "static/media/about_1.737db6b2.svg": "/myPortfolio-V1/static/media/about_1.737db6b2.svg",
     "static/media/bkkbn.912b278d.png": "/myPortfolio-V1/static/media/bkkbn.912b278d.png",
     "static/media/bkkbnLogo.46469504.png": "/myPortfolio-V1/static/media/bkkbnLogo.46469504.png",
     "static/media/bkkbnShirt.91069c38.png": "/myPortfolio-V1/static/media/bkkbnShirt.91069c38.png",
@@ -29,7 +29,7 @@
     "static/media/dramagonERD.a66b6da8.png": "/myPortfolio-V1/static/media/dramagonERD.a66b6da8.png",
     "static/media/dramagonHifi.84fd8455.png": "/myPortfolio-V1/static/media/dramagonHifi.84fd8455.png",
     "static/media/dramagonMedfi.6a8e5037.png": "/myPortfolio-V1/static/media/dramagonMedfi.6a8e5037.png",
-    "static/media/home.fd678277.svg": "/myPortfolio-V1/static/media/home.fd678277.svg",
+    "static/media/home_1.16d679b4.png": "/myPortfolio-V1/static/media/home_1.16d679b4.png",
     "static/media/obuce.fa072abc.png": "/myPortfolio-V1/static/media/obuce.fa072abc.png",
     "static/media/obuceHifi.d51c4072.png": "/myPortfolio-V1/static/media/obuceHifi.d51c4072.png",
     "static/media/obuceJourney.44cdfcc2.png": "/myPortfolio-V1/static/media/obuceJourney.44cdfcc2.png",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.e7428a94.js",
     "static/js/2.5c0030de.chunk.js",
     "static/css/main.b4171b54.chunk.css",
-    "static/js/main.c496273e.chunk.js"
+    "static/js/main.9a1aee5e.chunk.js"
   ]
 }
